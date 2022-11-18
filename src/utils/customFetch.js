@@ -1,14 +1,14 @@
 let is_ok = true;
 
-const customFetch = () => {
+const customFetch = (time, prods) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (is_ok) {
-                resolve()
+                resolve(prods);
             } else {
-                reject("Error in the customFetch")
+                reject("Error in the customFetch");
             }
-        },)
+        }, time);
     })
 }
 

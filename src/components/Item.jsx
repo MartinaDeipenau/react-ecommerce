@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 
-const Item = ({ id, title, stock, price, image }) => {
+const Item = ({ id, title, stock, price, image, description }) => {
     return (
         <div>
             <image src={image} />
