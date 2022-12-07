@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount';
 
+
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0)
 
@@ -18,7 +19,7 @@ const ItemDetail = ({ item }) => {
                     <div>
                         <div>
                             <div>
-                                <img> src={item.image} </img>
+                                <img> src={item.image[0]} </img>
                             </div>
                             <div>
                                 <title>{item.title} </title>

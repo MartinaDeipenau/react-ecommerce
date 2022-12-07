@@ -1,10 +1,11 @@
+import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 
 
 const NavBar = () => {
     return (
-        <div className='header'>
+        <Fragment className='header'>
             <div className="logo">
                 <Link to='/'>LOLA Cat Shop</Link>
             </div>
@@ -16,7 +17,7 @@ const NavBar = () => {
             <div className="carrito">
                 <><CartWidget /></>
             </div>
-        </div>
+        </Fragment>
     )
 }
 
