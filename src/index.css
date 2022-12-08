@@ -171,3 +171,25 @@ h1 {
     align-items: center;
     margin-left: 100px;
 }
+
+.Compra {
+    margin-left: 20px;
+    padding: 10px;
+}
+.OrdendeCompra {
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px -6px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #606c38;
+    width: 350px;
+    height: 350px;
+}
+
+.Buttoncomprar {
+    color: black;
+    background-color: #adc178;
+    border-radius: 5px;
+}
