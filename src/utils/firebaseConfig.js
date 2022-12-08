@@ -1,18 +1,20 @@
-// import { initializeApp } from "firebase/app";
-// import { getFirestore } from "firebase/firestore";
+
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyAOpW-0nWjlGyGMV7xmQ34oYHFYsi_UHr8",
-//   authDomain: "react-ecommerce-7e9a1.firebaseapp.com",
-//   projectId: "react-ecommerce-7e9a1",
-//   storageBucket: "react-ecommerce-7e9a1.appspot.com",
-//   messagingSenderId: "563547005266",
-//   appId: "1:563547005266:web:06cca984f96dae029b9a8b"
-// };
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC3s5UZPf0EYm2nEes2N_kUDWdREtkbE90",
+  authDomain: "ecommerce-react-50e42.firebaseapp.com",
+  projectId: "ecommerce-react-50e42",
+  storageBucket: "ecommerce-react-50e42.appspot.com",
+  messagingSenderId: "87918995361",
+  appId: "1:87918995361:web:c7c0055eaad9da165f4de0"
+};
 
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
-// // Initialize Cloud Firestore and get a reference to the service
-// export const db = getFirestore(app);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+// Initialize Cloud Firestore and get a reference to the service
+export const db = getFirestore(app);
+
