@@ -1,5 +1,5 @@
 const FormatNumber = ({number}) => {
-    return <span>{new Intl.NumberFormat('en-ARS', {currency:'ARS'}).format(number)} </span>
+    return <span>{new Intl.NumberFormat('ARS', {currency:'ARS'}).format(number)} </span>
 
 }
 

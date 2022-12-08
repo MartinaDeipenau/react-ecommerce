@@ -69,7 +69,7 @@ const Cart = () => {
                                     <div>
                                         <img src={item.imageItem} />
                                         <div>
-                                            <p>Product:</p> {item.titleItem}
+                                            <p>{item.titleItem}</p> 
                                         </div>
                                         <button onClick={() => test.deleteItem(item.idItem)}>Borrar</button>
                                     </div>
