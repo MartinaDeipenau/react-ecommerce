@@ -1,23 +1,151 @@
 .header {
-    background-color: burlywood;
+    background-color: #606c38;
+    box-shadow: 5px 5px 20px -6px;
+    margin-bottom: 10px;
 }
-
-
 
 .logo {
     text-align: left;
     text-decoration: none;
-    background-color: black;
+    font-size: 30px;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .menu {
     text-align: center;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+    margin: 35px;
     padding: 10px;
     color: black;
-
 }
 
 .carrito {
     text-align: right;
+    width: 50px;
+    text-decoration: none;
 }
+
+.Item {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px -6px;
+    width: 300px;
+    height: 380px;
+    background-color: #adc178;
+}
+
+.imageItem {
+    width: 300px;
+    height: 300px;
+    border: 1px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.p {
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: cursive;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+.ver-mas {
+    color:  black;
+    font-family: cursive;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.Detail {
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border: 1px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    box-shadow: 5px 5px 20px -6px;
+    width: 350px;
+    height: 600px;
+    background-color: #adc178;
+}
+
+.imageDetail {
+    width: 350px;
+    height: 330px;
+    border: 1px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.ItemCount {
+    display:inline-flex;
+    justify-content: space-around;
+    width: 150px;
+    height: 35px;
+    margin-left: 40px;
+    border-radius: 5px;
+}
+
+.AgregarAlCarrito {
+    border-radius: 5px;
+    display: inline-flex;
+    width: 150px;
+    height: 35px;
+    justify-content: space-around;
+    margin-left: 40px;
+    background-color: #606c38;
+}
+
+.sumar {
+    width: 30px;
+    height: 30px;
+    background-color: #386641;
+    border-radius: 5px;
+    color: black;
+}
+
+.restar {
+    width: 30px;
+    height: 30px;
+    background-color: #bc4749;
+    border-radius: 5px;
+    color: black;
+}
+
+.TerminarCompra {
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-flex;
+    width: 150px;
+    height: 35px;
+    justify-content: space-around;
+    margin-left: 40px;
+    background-color:  #606c38;
+}
+
+.Button-ItemCount {
+    padding: 40px;
+    margin-top: 40px;
+    justify-content: right;
+}
+

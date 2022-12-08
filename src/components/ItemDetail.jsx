@@ -19,24 +19,24 @@ const ItemDetail = ({ item }) => {
             {
                 item && item.image
                     ?
-                    <div>
-                        <div>
+                        <div className='Detail'>
                             <div>
-                                <img> src={item.image} </img>
+                                <img className='imageDetail' src={item.image} />
                             </div>
                             <div>
-                                <title>{item.title} </title>
-                                <description>{item.description} </description>
-                                <price>${item.price} </price>
-                                <stock>{item.stock} unidades en stock </stock>
+                                <p>{item.title} </p>
+                                <p>{item.description} </p>
+                                <p>${item.price} </p>
+                                <p>{item.stock} unidades en stock </p>
                             </div>
+                            <div className='Count'>
                             {
                                 itemCount === 0
-                                    ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                                    : <Link to='/cart'><button variant="container">CheckOut</button></Link>
+                                    ? <ItemCount className='TerminarCompra' stock={item.stock} initial={itemCount} onAdd={onAdd} />
+                                    : <Link to='/cart'><button variant="container">Terminar compra</button></Link>
                             }
+                            </div>
                         </div>
-                    </div>
                     : <p>Cargando...</p>
         }
         </>

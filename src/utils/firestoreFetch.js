@@ -17,12 +17,12 @@ export const firestoreFetch = async(idCat) => {
    }
 
    export const firestoreFetchOne = async(idItem) => {
-    const docRef = doc(db, "cities", "SF");
+    const docRef = doc(db, "products", idItem);
     const docSnap = await getDoc(docRef);
     
     if (docSnap.exists()) {
       return {
-        id: idItem,
+        id: docSnap.id,
         ...docSnap.data()
       }
     } else {

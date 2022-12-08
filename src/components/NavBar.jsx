@@ -5,19 +5,19 @@ import CartWidget from './CartWidget';
 
 const NavBar = () => {
     return (
-        <Fragment className='header'>
-            <div className="logo">
-                <Link to='/'>LOLA Cat Shop</Link>
+        <div className='header'>
+            <div>
+                <Link className='logo' to='/'>LOLA Cat Shop</Link>
             </div>
-            <div className="menu">
-                <Link to='/category/2'>Accesorios</Link>
-                <Link to='/category/1'>Camas</Link>
-                <Link to='/category/3'>Alimentos</Link>
+            <div>
+                <Link className='menu' to='/category/2'>Accesorios</Link>
+                <Link className='menu' to='/category/1'>Camas</Link>
+                <Link className='menu' to='/category/3'>Alimentos</Link>
             </div>
-            <div className="carrito">
-                <><CartWidget /></>
+            <div>
+                <Link className='carrito'><CartWidget/></Link>
             </div>
-        </Fragment>
+        </div>
     )
 }
 
