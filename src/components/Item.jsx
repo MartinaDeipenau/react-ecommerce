@@ -4,18 +4,18 @@ import { Link } from 'react-router-dom';
 
 const Item = ({ id, title, stock, price, image, description }) => {
     return (
-        <Fragment>
+        <div>
             <image src={image} />
-            <Fragment>
+            <div>
                 <price>${price} </price>
-            </Fragment>
-            <Fragment>
+            </div>
+            <div>
                 <stock /> {stock} unidades.
-            </Fragment>
-            <Fragment>
+            </div>
+            <div>
                 <Link to={`/item/${id}`}>Descripcion</Link>
-            </Fragment>
-        </Fragment>
+            </div>
+        </div>
     )
 }
 

@@ -3,29 +3,18 @@ import customFetch from '../utils/customFetch';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import products from '../utils/products';
-import { db } from '../utils/firebaseConfig';
-import { collection, getDocs } from "firebase/firestore"; 
+import { firestoreFetch } from '../utils/firestoreFetch';
 
 const ItemListContainer = () => {
     const [datos, setDatos] = useState([])
     const { idCategory } = useParams()
 
     useEffect( () => {
-       const firebaseFetch = async() => {
-        const querySnapshot = await getDocs(collection(db, "products"));
-        querySnapshot.forEach((doc) => {
-          console.log(`${doc.id} => ${doc.data()}`);
-        });
-       }
-       firebaseFetch()
+       firestoreFetch(idCategory)
+       .then(response => setDatos(response))
+       .catch(error => console.log(error))
     }, [idCategory])
 
-
-useEffect(() => {
-    return (() => {
-        setDatos([])
-    })
-}, [])
 
 return (
     <ItemList items={datos} />

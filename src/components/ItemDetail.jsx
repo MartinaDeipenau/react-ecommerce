@@ -1,14 +1,17 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import ItemCount from './ItemCount';
+import { CartContext } from './CartContext';
 
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0)
+    const test = useContext(CartContext)
 
     const onAdd = (qty) => {
         alert("Agregaste" + qty + "items.")
         setItemCount(qty)
+        test.addToCart(item, qty)
     }
 
     return (
@@ -19,7 +22,7 @@ const ItemDetail = ({ item }) => {
                     <div>
                         <div>
                             <div>
-                                <img> src={item.image[0]} </img>
+                                <img> src={item.image} </img>
                             </div>
                             <div>
                                 <title>{item.title} </title>
