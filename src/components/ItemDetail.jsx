@@ -19,28 +19,28 @@ const ItemDetail = ({ item }) => {
             {
                 item && item.image
                     ?
-                        <div className='Detail'>
-                            <div>
-                                <img className='imageDetail' src={item.image} />
-                            </div>
-                            <div>
-                                <p>{item.title} </p>
-                                <p>{item.description} </p>
-                                <p>${item.price} </p>
-                                <p>{item.stock} unidades en stock </p>
-                            </div>
-                            <div className='Count'>
+                    <div className='Detail'>
+                        <div>
+                            <img className='imageDetail' src={item.image} />
+                        </div>
+                        <div>
+                            <p>{item.title} </p>
+                            <p>{item.description} </p>
+                            <p>${item.price} </p>
+                            <p>{item.stock} unidades en stock </p>
+                        </div>
+                        <div className='Count'>
                             {
                                 itemCount === 0
                                     ? <ItemCount className='TerminarCompra' stock={item.stock} initial={itemCount} onAdd={onAdd} />
                                     : <Link to='/cart'><button variant="container">Terminar compra</button></Link>
                             }
-                            </div>
                         </div>
+                    </div>
                     : <p>Cargando...</p>
-        }
+            }
         </>
     )
-}   
+}
 
 export default ItemDetail;

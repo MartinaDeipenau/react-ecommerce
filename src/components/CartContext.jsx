@@ -31,7 +31,7 @@ const CartContextProvider = ({ children }) => {
     }
 
     const deleteItem = (id) => {
-        let result= cartList.filter(item => item.idItem != id)
+        let result = cartList.filter(item => item.idItem != id)
         setCartList(result)
     }
 
@@ -55,7 +55,7 @@ const CartContextProvider = ({ children }) => {
     }
 
     return (
-        <CartContext.Provider value= {{
+        <CartContext.Provider value={{
             cartList,
             addToCart,
             removeList,
@@ -65,9 +65,9 @@ const CartContextProvider = ({ children }) => {
             calcTotal,
             calcItemsQty
         }}>
-            { children }
+            {children}
         </CartContext.Provider>
     )
-    }
+}
 
-    export default CartContextProvider
+export default CartContextProvider
